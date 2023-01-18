@@ -43,10 +43,11 @@ public class PlayPig {
 					System.out.println("Die "+die);
 					if(die==1) 
 						{
-							scoreOfTurn =0;
-							//this.setTotalScore(0);
+							
+							this.setTotalScore(this.getTotalScore()-scoreOfTurn);
 							System.out.println("Turn over. No score");
 							System.out.println("Total score "+this.getTotalScore());
+						        scoreOfTurn =0;
 							break;
 						}
 					else
